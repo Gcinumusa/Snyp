@@ -1,0 +1,265 @@
+.schedule-page {
+  display: flex;
+  justify-content: space-between; /* This separates the content and the cart */
+  align-items: flex-start; /* Aligns items at the start of the flex container for better cross-browser support */
+}
+
+
+.schedule-content, .cart-container {
+  flex: 1; /* This makes both children flex and share the available space */
+  padding: 20px; 
+  border-radius: 40px;/* Adds some padding around the content for better spacing */
+}
+
+.cart-container {
+  max-width: 400px; 
+   position: relative; 
+}
+@media (max-width: 768px) {
+  .schedule-page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .schedule-content, .cart-container {
+    flex: none; /* This removes the flex grow/shrink behavior */
+    width: 100%; /* Makes each take the full width of the container */
+    margin: 0 0 20px 0; /* Adjust margin for mobile layout */
+  }
+
+  .cart-container {
+    order: 2; /* Ensures the cart is always below the schedule content */
+  }
+
+  .schedule-content {
+    order: 1;
+  }
+}
+/* Ensure the rest of your styles are intact */
+
+form {
+  
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 10px;
+}
+.cart-container {/* Adjust width as necessary */
+    margin: 80px;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px; overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .cart-container h2 {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .cart-details {
+    border-top: 1px solid #eaeaea;
+    padding-top: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .cart-total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .cart-tip {
+    margin-top: 20px;
+  }
+  
+  .tip-options button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .continue-button {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 80px;
+    cursor: pointer;
+  }
+  .pay-button {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+   /* Modals Design */
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #eaeaea;
+    border-radius: 28px;
+    padding: 5px;
+  }
+  .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 95%;
+    height: 200px;
+    max-width: 400px;
+    position: relative;
+    top: 220px;
+  }
+
+  .modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+
+  .modal-contentB {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 95%;
+    height: 850px;
+    max-width: 400px;
+    position: relative;
+    top: 220px;
+  }
+
+  .modal-overlayB {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Adjust z-index as needed */
+  }
+
+  .payment-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* This adds space between the buttons */
+  }
+  
+  .payment-method-button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .payment-method-button .icon {
+    margin-right: 10px; /* Adds some space between the icon and the text */
+    display: flex; /* Centers the svg icon vertically */
+  }
+  
+
+
+
+  /* Input Design*/
+  .custom-input-container {
+    display: flex;
+    gap: 10px; /* adjust as needed */
+    margin-bottom: 20px; /* adjust as needed */
+  }
+  
+  .custom-input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .phone-number-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  .phone-number-input input {
+    flex-grow: 1;
+  }
+  
+  .phone-number-input .flag-dropdown {
+    border-right: 1px solid #ccc;
+    padding: 10px;
+  }
+  .submit-button {
+    background-color: #000; /* Example color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-top: 10px; /* Adjust as needed */
+    cursor: pointer;
+  }
+  
+  /* Schedule Time and Date Design */
+  
+  .time-button{
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-right: 10px;
+    padding: 0px 15px 0px 10px;
+  }
+  .date-button{
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-right: 10px;
+    padding: 0px 15px 0px 10px;
+  }
+
+  .booking-info{
+    font-size: 6px;
+  }
+
+  .booking-form{
+    height: 220px;
+  }
+
+  

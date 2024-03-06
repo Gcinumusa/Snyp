@@ -1,0 +1,127 @@
+.barber-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .barber-card {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .barber-card img {
+    width: 100px; /* Adjust as necessary */
+    height: 100px;
+    border-radius: 10%;
+    object-fit: cover;
+  }
+  
+  .barber-card h3 {
+    margin-top: 10px;
+    font-size: 1.0em;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .barber-card p {
+    font-size: 0.5em;
+    color: #666;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .barber-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .container {
+    display: flex;
+    /* ... (other styles for the container) */
+  }
+  
+  .barber-grid {
+    /* ... (styles for the barber grid) */
+    flex: 1; /* Adjust this as needed */
+  }
+  
+  .right {
+    flex: 1; /* Adjust this as needed */
+    padding: 20px; /* Adjust the padding as needed */
+  }
+  
+  .header {
+    margin-bottom: 20px;
+    /* Style your header text as needed */
+  }
+  
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates a 3-column layout */
+    grid-gap: 20px; /* Adjust gap size as needed */
+    padding: 20px 0;
+  }
+  
+  .card {
+    background-color: #f8f8f8; /* Light gray background, adjust color as needed */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    height: 100px; /* Adjust height as needed */
+  }
+  
+  /* Add responsiveness */
+  @media (max-width: 768px) {
+    .cards-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cards-container {
+      grid-template-columns: 1fr; /* 1 column for mobile screens */
+    }
+  }
+  .barbershop-layout {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    max-width: 448px; /* Adjust based on your design */
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    background: #fff; /* Or any color based on your design */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* This adds the shadow effect */
+    border-radius: 10px; /* This rounds the corners */
+  }
+  
+  .barbershop-title {
+    text-align: center;
+    margin-bottom: 20px;
+    /* Additional styling for the title as needed */
+  }
+  
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates a 2-column layout */
+    grid-gap: 20px; /* Adjust the gap size as needed */
+    padding: 20px 0;
+  }
+  
+  .card {
+    background-color: #f0f0f0; /* Light gray background, adjust color as needed */
+    height: 150px; /* Adjust height as needed */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .cards-container {
+      grid-template-columns: 1fr; /* 1 column for smaller screens */
+    }
+  }
+  
+
+  

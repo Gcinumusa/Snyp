@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+.barbershops-container {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Lato'; /* Add this line to use the Lato font */
+}
+  
+  .barbershops-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px; 
+  }
+  
+  .shop-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px; margin-right: 20px;
+    box-shadow: 0 2px 4px rgba(10, 9, 9, 0.431);
+    align-items: center;
+    width: 240px;
+  }
+  
+  .shop-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .shop-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 40;
+  }
+  
+  .shop-name {
+    margin: 0;
+    flex: 1;
+  }
+  
+  .shop-info-container {
+    margin-left: 20px;
+  }
+  .shop-link {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .shop-link:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .shop-info {
+    margin-top: 5px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .shop-card {
+      flex: 1 1 calc(50% - 20px); /* 50% width for each card with 20px margin */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .shop-card {
+      flex: 1 1 calc(100% - 20px); /* 100% width for each card with 20px margin */
+    }
+  }
+  
+  .view-more-btn-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .view-more-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .view-more-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  
